@@ -12,6 +12,7 @@ pip install --upgrade pip
 pip install chainer
 pip install chainerui
 pip install cmake
+pip install cupy
 pip install dlib
 pip install face_recognition
 pip install gpustat
