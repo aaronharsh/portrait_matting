@@ -1,3 +1,29 @@
+# Machine setup #
+
+```
+sudo apt install cmake
+sudo apt install libopencv-dev
+sudo apt install python-pip
+sudo apt install python-venv
+sudo apt install python-virtualenv
+sudo apt install python3
+
+pip install --upgrade pip
+pip install chainer
+pip install chainerui
+pip install cmake
+pip install dlib
+pip install face_recognition
+pip install matplotlib
+pip install numpy
+pip install opencv
+pip install opencv-python
+pip install pillow
+pip install requests
+pip install scipy
+pip install urllib
+```
+
 # Portrait Matting #
 [Deep Automatic Portrait Matting](http://www.cse.cuhk.edu.hk/leojia/projects/automatting/index.html) and
 [Automatic Portrait Segmentation for Image Stylization](http://xiaoyongshen.me/webpage_portrait/index.html)
@@ -43,7 +69,7 @@ $ python scripts/prepare_seg_plus_dataset.py
 $ python scripts/prepare_seg_tri_dataset.py
 
 # Computes loss weight matrixs. (extra alpha mask are needed)
-$ python scripts/prepare_matting_dataset.py
+$ python scripts/prepare_matting_dataset.py --pseudo_alpha
 ```
 
 ### Training ###

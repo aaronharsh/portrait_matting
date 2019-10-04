@@ -8,3 +8,4 @@ result*
 *.pyc
 *.npz
 *.dat
+.venv
