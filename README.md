@@ -14,6 +14,7 @@ pip install chainerui
 pip install cmake
 pip install dlib
 pip install face_recognition
+pip install gpustat
 pip install matplotlib
 pip install numpy
 pip install opencv
