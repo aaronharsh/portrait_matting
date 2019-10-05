@@ -57,6 +57,9 @@ class Predictor(object):
         # Create input array
         inp = [img]
 
+        if self._mode == 'seg':
+            inp.append(None)
+
         if self._mode in ['seg+', 'seg_tri', 'mat']:
             # Detect face
             ret_align = self._face_masker.align(img)

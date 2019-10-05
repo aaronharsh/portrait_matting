@@ -76,12 +76,12 @@ $ python scripts/prepare_matting_dataset.py --pseudo_alpha
 
 ### Training ###
 ```bash
-$ python scripts/train.py --mode {seg,seg+,seg_tri,mat}
+$ python scripts/train.py --gpus 0 --batchsize 256 --mode {seg,seg+,seg_tri,mat}
 ```
 
 ### Testing ###
 ```bash
-$ python scripts/train.py --mode {seg,seg+,seg_tri,mat} --model_path <path> -i <image path>
+$ python scripts/test.py --gpu 0 --mode {seg,seg+,seg_tri,mat} --model_path <path> -i <image path>
 ```
 
 ## Results ##
